@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    background:hsl(233, 47%, 7%);
+    Font-size: 15px;
+   font-family: 'Inter','Lexend Deca', sans-serif;
+
+}
+.left{
+     background:hsl(244, 38%, 16%);
+     color:hsl(0, 0%, 100%);
+}
+img{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+.row{
+   display: flex;
+flex-flow: column-reverse;
+     }
+
+     img{
+            display: block;
+     }
+}
+    
+
 
  .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
