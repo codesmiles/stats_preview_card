@@ -9,9 +9,16 @@
 .left{
      background:hsl(244, 38%, 16%);
      color:hsl(0, 0%, 100%);
+     text-align: center;
 }
 img{
     display: none;
+}
+
+span{
+    background:hsl(244, 38%, 16%);
+    color:hsl(277, 64%, 61%);
+    font-size: larger;
 }
 @media screen and (max-width: 768px) {
 .row{
@@ -22,6 +29,7 @@ flex-flow: column-reverse;
      img{
             display: block;
      }
+     
 }
     
 

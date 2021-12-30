@@ -3,12 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import image from "./images/image-header-desktop.jpg";
 function App() {
-
   const content = `Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.`;
   const [blogs, setBlogs] = useState([
     { number: "10k+", value: "companies", id: 1 },
-    { number: 314, value: " templates", id: 2 },
+    { number: `314`, value: " templates", id: 2 },
     { number: " 12m+", value: " queries", id: 3 },
   ]);
   return (
@@ -24,14 +23,24 @@ function App() {
             <h1 style={{ backgroundColor: "hsl(244,38%,16%)" }}>
               Get <span>insights</span> that help your business grow.
             </h1>
-            <p className="mt-4" style={{ backgroundColor: "hsl(244,38%,16%)" }}>
+            <p
+              className="mt-4"
+              style={{
+                backgroundColor: "hsl(244,38%,16%)",
+                color: `hsla(0, 0%, 100%, 0.75)`,
+              }}
+            >
               {content}
             </p>
             <ul
-              className="row mt-5 p-0"
+              className="row mt-5  "
               style={{
                 backgroundColor: "hsl(244,38%,16%)",
                 listStyleType: "none",
+                width: `100%`,
+                // margin:`0 auto`
+                // display: "grid",
+                // justifyContent: "center",
               }}
             >
               {blogs.map((blog) => (
@@ -42,10 +51,19 @@ function App() {
                     backgroundColor: "hsl(244,38%,16%)",
                   }}
                 >
-                  <h3 style={{ backgroundColor: "hsl(244,38%,16%)" }}>
+                  <h3
+                    style={{
+                      backgroundColor: "hsl(244,38%,16%)",
+                    }}
+                  >
                     {blog.number}
                   </h3>
-                  <p style={{ backgroundColor: "hsl(244,38%,16%)" }}>
+                  <p
+                    style={{
+                      backgroundColor: "hsl(244,38%,16%)",
+                      color: ` hsla(0, 0%, 100%, 0.6)`,
+                    }}
+                  >
                     {blog.value}
                   </p>
                 </li>
@@ -58,7 +76,7 @@ function App() {
               backgroundImage: `url(${image})`,
               backgroundSize: "100% 100%",
               backgroundRepeat: "no-repeat",
-              backgroundColor: "#f5f5f5",
+              // backgroundColor: "#f5f5f5",
             }}
           >
             <img
@@ -67,6 +85,7 @@ function App() {
               style={{
                 width: "100%",
                 height: "100%",
+             
               }}
             />
           </div>
